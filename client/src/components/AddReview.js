@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactStars from "react-rating-stars-component";
 import { connect } from "react-redux";
-import { postReview } from "../actions";
+import { postReview, fetchUser } from "../actions";
 
 class AddReview extends Component {
   constructor() {
@@ -30,7 +30,13 @@ class AddReview extends Component {
       console.log(this.state.reviewbody);
       const id = window.location.pathname.split("/").slice(-1)[0];
       if (this.state.stars > 0) {
-        this.props.postReview(id, this.state.reviewbody, this.state.stars)
+        if (this.props.auth) {
+          this.props.postReview(id, this.state.reviewbody, this.state.stars);
+        } else {
+          this.setState({
+            prompt: "Please Login to submit review",
+          });
+        }       
       } else {
         this.setState({
           prompt: "Please select a star rating",
@@ -105,7 +111,10 @@ class AddReview extends Component {
 }
 
 function mapStateToProps(state) {
-  return { review: state.review };
+  return { 
+    review: state.review,
+    auth: state.auth,
+  };
 }
 
-export default connect(mapStateToProps, { postReview })(AddReview);
+export default connect(mapStateToProps, { postReview, fetchUser })(AddReview);

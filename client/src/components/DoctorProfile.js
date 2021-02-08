@@ -11,12 +11,27 @@ class DoctorProfile extends React.Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.renderStars = this.renderStars.bind(this);
   }
 
   handleClick() {
     this.setState({
       clicked: true,
     });
+  }
+  
+  renderStars() {
+    if (this.props.rating && this.props.evals) {
+      return (
+        <ReactStars
+          value={this.props.rating / this.props.evals}
+          count={5}
+          size={24}
+          activeColor="#ffd700"
+          isHalf={true}
+          edit={false}
+         />)
+    }
   }
 
   render() {
@@ -29,14 +44,7 @@ class DoctorProfile extends React.Component {
               <div class="card-content">
                 <h4 class="header">{this.props.name}</h4>
                 <h6>{this.props.specialty}</h6>
-                <ReactStars
-                  value={this.props.rating / this.props.evals}
-                  count={5}
-                  size={24}
-                  activeColor="#ffd700"
-                  isHalf={true}
-                  edit={false}
-                />
+                {this.renderStars()}
                 <span style={{ size: "5px" }}>{this.props.evals} ratings</span>
                 <div class="valign-wrapper">
                   <i class="material-icons">phone</i>

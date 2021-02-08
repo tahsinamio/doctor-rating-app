@@ -10,12 +10,7 @@ class DoctorPage extends Component {
   }
   
   renderDoctor() {
-    let {rating, evals} = this.props.doctor;
-    if (rating && evals) {
-      return <DoctorProfile {...this.props.doctor} />;
-    } else {
-      return null;
-    }
+    return <DoctorProfile {...this.props.doctor} />;
   }
 
   render() {
