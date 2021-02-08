@@ -1,0 +1,22 @@
+{
+  "doctors": [
+    {
+      "id": "john-doe",
+      "name": "John Doe",
+      "specialty": "FAmily medicine",
+      "rating": "7.2"
+    },
+    {
+      "id": "meryl-doe",
+      "name": "Meryl Doe",
+      "specialty": "Orthologist",
+      "rating": "9.1"
+    },
+    {
+      "id": "derek-king",
+      "name": "Derek king",
+      "specialty": "Cardiologist",
+      "rating": "8.9"
+    }  
+  ]
+}
