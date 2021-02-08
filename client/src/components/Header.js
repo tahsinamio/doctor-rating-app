@@ -19,14 +19,18 @@ class Header extends Component {
     console.log(this.props);
     return (
       <div>
-          <nav>
-            <div className="nav-wrapper  blue darken-1">
-              <a href="/" className="left brand-logo">
-                <div className="container">DoctorRatingsBD</div>
-              </a>
-              <ul className="right">{this.renderContent()}</ul>
-            </div>
-          </nav>
+        <nav>
+          <div className="nav-wrapper  blue darken-1">
+            <a href="/" className="left brand-logo">
+              <div className="container">
+                <span class="valign-wrapper" style={{ fontSize: "20px" }}>
+                  DoctorRatingsBD
+                </span>
+              </div>
+            </a>
+            <ul className="right">{this.renderContent()}</ul>
+          </div>
+        </nav>
       </div>
     );
   }
