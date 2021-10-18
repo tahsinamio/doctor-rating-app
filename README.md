@@ -16,6 +16,16 @@ link: http://drting.herokuapp.com
 </p>
 
 ## Doctor Page
+<p align="center">
+  <img src="./docs/Screen Shot 2021-10-18 at 12.54.38 PM.png" width="720" alt="accessibility text">
+  <img src="./docs/IMG_0359.PNG" width="200" alt="accessibility text">
+</p>
 
 ## Add Doctor Page
 :closed_lock_with_key: requires admin access
+<p align="center">
+  <img src="./docs/Screen Shot 2021-10-18 at 12.37.46 PM.png" width="720" alt="accessibility text">
+  <img src="./docs/Screen Shot 2021-10-18 at 12.38.07 PM.png" width="720" alt="accessibility text">
+</p>
+
+
