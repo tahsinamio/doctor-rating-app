@@ -5,11 +5,8 @@
 A doctor review site where users can search up local doctors and get more information on them and see others’ reviews.                                             
 Created using React.js, Node.js, Mongoose, Materialize UI. App hosted in Heroku and db in MongoDB
 
-link: http://drting.herokuapp.com                                                                                                                                   
-:warning:  demo app does not have ssl certificate and so Google sign in may only work in select browsers (like Google Chrome)
-
-Edit 2023:
-:warning:  demo app not working due to heroku dropping their free tier :(
+link: http://drting.herokuapp.com                                                                                                                               
+⛔  demo app not working due to heroku dropping their free tier :(
 
 ## Homepage
 <p align="center">
